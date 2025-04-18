@@ -1,0 +1,194 @@
+/* Fonte temática medieval */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url('https://images.unsplash.com/photo-1503437313881-503a91226402?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+  background-attachment: fixed;
+  font-family: 'Cinzel', serif;
+  color: #f1e9d1;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-bottom: 2px solid #a3822f;
+}
+
+.logo {
+  font-size: 2em;
+  color: #e6c379;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #f1e9d1;
+  transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+  color: #e6c379;
+}
+
+.login-icon {
+  font-size: 1.8em;
+  color: #e6c379;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.login-icon:hover {
+  transform: scale(1.2);
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #e6c379;
+}
+
+.hero p {
+  font-size: 1.3em;
+}
+
+.hero p span {
+  color: #e6c379;
+  font-weight: bold;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #a3822f;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: #cfa93e;
+  transform: translateY(-2px);
+}
+
+.champions {
+  background: #0d0d0d; /* Substitui a transparência para fundo sólido */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.champions h2 {
+  font-size: 2.8em;
+  margin-bottom: 30px;
+  color: #e6c379;
+}
+
+.champion-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.champion {
+  background: rgba(0, 0, 0, 0.9); /* Mais opaco para eliminar a visibilidade do fundo */
+  border: 2px solid #a3822f;
+  border-radius: 15px;
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.champion:hover {
+  transform: scale(1.05);
+}
+
+.champion img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #a3822f;
+}
+
+.champion h3 {
+  margin-top: 15px;
+  color: #e6c379;
+}
+
+.champion p {
+  margin: 10px 0 0;
+}
+
+.combo-section {
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.combo-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: #e6c379;
+}
+
+.combo-section p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+/* Adicione ao final do seu style.css */
+
+.combo-desc {
+    font-size: 0.9em;
+    margin: 10px 0;
+    color: #c9b897;
+    min-height: 60px;
+  }
+  
+  .champion img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid #a3822f;
+    margin-bottom: 15px;
+  }
+  
+  /* Ajuste para manter a responsividade */
+  @media (max-width: 768px) {
+    .champion {
+      width: 100%;
+      max-width: 300px;
+    }
+    
+    .combo-desc {
+      min-height: auto;
+    }
+  }
+  
+.footer {
+  text-align: center;
+  padding: 15px;
+  background: rgba(0,0,0,0.8);
+  border-top: 2px solid #a3822f;
+  font-size: 0.85em;
+  color: #c9b897;
+}

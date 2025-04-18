@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legends of Eldoria - Pré-Lançamento</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function comprar(valor) {
+      const usuarioLogado = localStorage.getItem('usuarioLogado');
+      if (!usuarioLogado) {
+        alert('⚠️ Você precisa estar logado para realizar a compra!');
+      } else {
+        window.location.href = `pagamento.html?valor=${valor}`;
+      }
+    }
+  </script>
+</head>
+<body>
+  <!-- Menu Medieval -->
+  <nav class="menu">
+    <div class="logo">Eldoria</div>
+    <ul class="nav-list">
+      <li><a href="#home">Início</a></li>
+      <li><a href="#champions">Campeões</a></li>
+      <li><a href="#combos">Aventure-se</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <a href="#login" class="login-icon">🛡️</a>
+  </nav>
+
+  <!-- Hero: Pré-Lançamento -->
+  <section id="home" class="hero">
+    <h1>Uma Nova Lenda Está Prestes a Nascer</h1>
+    <p>Reserve já sua <span>Edição de Aventureiro</span> com chave secreta e brindes épicos!</p>
+    <a href="#combos" class="btn">Ver Combos</a>
+  </section>
+
+  <!-- Campeões -->
+  <section id="champions" class="champions">
+    <h2>Os Guardiões de Eldoria</h2>
+    <div class="champion-grid">
+      <div class="champion">
+        <img src="campeao1.jpg" alt="Tharion, o Imortal">
+        <h3>Tharion, o Imortal</h3>
+        <p>Mestre das lâminas antigas, protetor das ruínas esquecidas.</p>
+      </div>
+      <div class="champion">
+        <img src="campeao2.jpg" alt="Elaria, a Feiticeira">
+        <h3>Elaria, a Feiticeira</h3>
+        <p>Domina os antigos grimórios do reino oculto.</p>
+      </div>
+      <div class="champion">
+        <img src="campeao3.jpg" alt="Brok, o Caçador">
+        <h3>Brok, o Caçador</h3>
+        <p>Conhece cada canto sombrio das florestas encantadas.</p>
+      </div>
+    </div>
+  </section>
+
+<!-- Combos -->
+<section id="combos" class="combo-section">
+  <h2>Escolha Seu Combo de Aventura</h2>
+
+  <div class="champion-grid">
+    <div class="champion">
+      <img src="combo1.jpg" alt="Pacote do Viajante">
+      <h3>Pacote do Viajante</h3>
+      <p>🔑 Chave de Acesso ao Jogo</p>
+      <p class="combo-desc">O essencial para começar sua jornada em Eldoria. Acesso completo ao jogo desde o primeiro dia.</p>
+      <p><strong>R$ 49,90</strong></p>
+      <button class="btn" onclick="comprar(49.90)">Comprar</button>
+    </div>
+    <div class="champion">
+      <img src="combo2.jpg" alt="Pacote do Escudeiro">
+      <h3>Pacote do Escudeiro</h3>
+      <p>🔑 Chave + 🎖️ Ícone exclusivo no perfil</p>
+      <p class="combo-desc">Para quem quer se destacar desde o início. Mostre seu status com um ícone exclusivo.</p>
+      <p><strong>R$ 89,90</strong></p>
+      <button class="btn" onclick="comprar(89.90)">Comprar</button>
+    </div>
+    <div class="champion">
+      <img src="combo3.jpg" alt="Pacote do Cavaleiro">
+      <h3>Pacote do Cavaleiro</h3>
+      <p>🔑 Chave + 🎖️ Ícone + 🐺 Mascote Virtual (Lobo Sombrio)</p>
+      <p class="combo-desc">Acompanhado por um lobo sombrio, você terá um aliado fiel em suas aventuras.</p>
+      <p><strong>R$ 179,90</strong></p>
+      <button class="btn" onclick="comprar(179.90)">Comprar</button>
+    </div>
+    <div class="champion">
+      <img src="combo4.jpg" alt="Pacote do Arcanista">
+      <h3>Pacote do Arcanista</h3>
+      <p>🔑 Chave + 🎖️ Ícone + 🐺 Mascote + 📜 Edição Digital de Lore</p>
+      <p class="combo-desc">Desvende os segredos de Eldoria com este compêndio digital exclusivo da história do reino.</p>
+      <p><strong>R$ 299,90</strong></p>
+      <button class="btn" onclick="comprar(299.90)">Comprar</button>
+    </div>
+    <div class="champion">
+      <img src="combo5.jpg" alt="Pacote do Senhor da Guilda">
+      <h3>Pacote do Senhor da Guilda</h3>
+      <p>🔑 Chave + 🎖️ Ícone + 🐺 Mascote + 📜 Lore + 🏰 Terreno Virtual</p>
+      <p class="combo-desc">Estabeleça seu domínio com um terreno exclusivo para construir sua guilda e receber aliados.</p>
+      <p><strong>R$ 599,90</strong></p>
+      <button class="btn" onclick="comprar(599.90)">Comprar</button>
+    </div>
+    <div class="champion">
+      <img src="combo6.jpg" alt="Pacote do Herdeiro da Coroa">
+      <h3>Pacote do Herdeiro da Coroa</h3>
+      <p>🔑 Chave + 🎖️ Ícone + 🐺 Mascote + 📜 Lore + 🏰 Terreno + ⚔️ Skin Épica de Arma</p>
+      <p class="combo-desc">Armado com uma lâmina lendária, seu poder será reconhecido em todo o reino.</p>
+      <p><strong>R$ 1.099,90</strong></p>
+      <button class="btn" onclick="comprar(1099.90)">Comprar</button>
+    </div>
+    <div class="champion">
+      <img src="combo7.jpg" alt="Pacote do Rei das Terras Antigas">
+      <h3>Pacote do Rei das Terras Antigas</h3>
+      <p>🔑 Chave + 🎖️ Ícone + 🐺 Mascote + 📜 Lore + 🏰 Terreno + ⚔️ Skin Épica + 💎 Armadura Lendária Exclusiva</p>
+      <p class="combo-desc">A experiência definitiva. Vista-se como a realeza com esta armadura que só os mais dignos podem ostentar.</p>
+      <p><strong>R$ 1.999,90</strong></p>
+      <button class="btn" onclick="comprar(1999.90)">Comprar</button>
+    </div>
+  </div>
+</section>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    &copy; 2025 Eldoria — Todos os direitos reservados.
+  </footer>
+</body>
+</html>
